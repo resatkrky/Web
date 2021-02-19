@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Göster-Gizle</title>
+	<style type="text/css">
+		#discerceve{
+			width: 390px;border: 4px solid #59f;padding: 5px;text-align: center;
+		}
+		#iccerceve{
+			width: 378px;border: 1px solid #59f;padding: 10px;font:bold 12px tahoma;color: #606060; text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		var istiklalmarsi="<h3 style='text-align:center;'>İSTİKLAL MARSI</h3><br>Korkma, sönmez bu şafaklarda yüzen al sancak;
+			      		   Sönmeden yurdumun üstünde tüten en son ocak.
+						   O benim milletimin yıldızıdır, parlayacak;
+						   O benimdir, o benim milletimindir ancak.
+						   Çatma, kurban olayım çehreni ey nazlı hilâl!
+					       Kahraman ırkıma bir gül… ne bu şiddet bu celâl?
+						   Sana olmaz dökülen kanlarımız sonra helâl,
+						   Hakkıdır, Hakk’a tapan, milletimin istiklâl."
+		function goster(){
+				document.getElementById("iccerceve").innerHTML=istiklalmarsi;
+		}
+		function gizle(){
+				document.getElementById("iccerceve").innerHTML="";
+		}
+	</script>
+</head>
+
+<body>
+	
+	<form>
+		<input type="button" value="Göster" onClick="goster()">
+		<input type="button" value="Gizle" onClick="gizle()">
+	</form><br/><br/>
+	<div id="discerceve">
+		<div id="iccerceve"></div>
+	</div>
+	
+</body>
+</html>

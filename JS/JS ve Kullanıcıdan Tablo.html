@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS ve Kullanıcıdan Tablo</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var satır=prompt("Satır","Lutfen giriniz");
+		var sutun=prompt("Sutun","Lutfen giriniz");
+		document.write("<table border='2' cellpadding='0' cellspacing='0'>");
+		var sayı=new Array()
+		for(var i=0;i<satır;i++){
+			document.write("<tr>");
+			for(var j=0;j<sutun;j++){
+				document.write("<td width='100' height='50'></td>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table>");
+	</script>
+</body>
+</html>

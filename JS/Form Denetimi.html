@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form Denetimi</title>
+	<style type="text/css">
+		input{
+			width: 150px;height: 25px;border: 1px solid #06c;
+		}
+	</style>
+	<script type="text/javascript">
+		function kontrol(){
+			var sifreal=document.getElementById("sifre").value;
+			if(sifreal=="12345"){
+				document.getElementById("sifre").style.background="green";
+				document.getElementById("uyari").innerHTML="Sifre Dogru";
+				
+			}
+			else{
+				document.getElementById("sifre").style.background="red";
+				document.getElementById("uyari").innerHTML="Sifre Yanlis";
+				document.getElementById("uyari").style.color="f00";
+				document.getElementById("sifre").style.color="fff";
+				document.getElementById("sifre").style.border="1px solid #a00";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form method="get">
+		<table >
+  <tbody>
+    <tr>
+      <td width="107" height="30">Kullanıcı Adı</td>
+      <td width="162"><input type="text" id="kullanici"></td>
+	  <td width="381"></td>
+    </tr>
+    <tr>
+      <td height="30">Şifre</td>
+      <td><input type="password" id="sifre" onChange="kontrol()"></td>
+	  <td width="381"><span id="uyari"></span></td>
+    </tr>
+  </tbody>
+</table>
+
+	</form>
+</body>
+</html>

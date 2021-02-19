@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OnMouseOut</title>
+	<script type="text/javascript">
+		function uzerinde(){
+			document.getElementById("mesaj").innerHTML="Turkiye'ye Basarılar";
+			document.getElementById("mesaj").style.color="#00f";
+		}
+		function degil(){
+			document.getElementById("mesaj").innerHTML="Euro 2016'da";
+			document.getElementById("mesaj").style.color="#000";
+		}
+	</script>
+</head>
+
+<body>
+	<h1 id="mesaj" onMouseOver="uzerinde()" onMouseOut="degil()">Euro 2016'da</h1>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+	<script type="text/javascript">
+		function kontrol(){
+			var adal=document.getElementById("ad").value;
+			var emailal=document.getElementById("email").value;
+			var sifreal=document.getElementById("sifre").value;
+			var tcnoal=document.getElementById("tcno").value;
+			if(adal==""){
+				document.getElementById("aduyari").innerHTML="Bos Birakilamaz.";
+				document.getElementById("aduyari").style.color"#f00";
+			}
+			if(emailal==""){
+				document.getElementById("emailuyari").innerHTML="Bos Birakilamaz.";
+				document.getElementById("emailuyari").style.color"#f00";
+			}
+			if(sifreal==""){
+				document.getElementById("sifreuyari").innerHTML="Bos Birakilamaz.";
+				document.getElementById("sifreuyari").style.color"#f00";
+			}
+			if(tcnoal==""){
+				document.getElementById("tcnouyari").innerHTML="Bos Birakilamaz.";
+				document.getElementById("tcnouyari").style.color"#f00";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form method="get">
+		<table width="405" border="1">
+  <tbody>
+    <tr>
+      <td width="73">Adı Soyadı</td>
+      <td width="145"><input type="text" id="ad"></td>
+      <td width="165"><span id="aduyari"></span></td>
+    </tr>
+    <tr>
+      <td>E-Mail</td>
+      <td><input type="text" id="email"></td>
+      <td><span id="emailuyari"></span></td>
+    </tr>
+    <tr>
+      <td>Şifre</td>
+      <td><input type="text" id="sifre"></td>
+      <td><span id="sifreuyari"></span></td>
+    </tr>
+    <tr>
+      <td>TC No</td>
+      <td><input type="text" id="tcno"></td>
+      <td><span id="tcnouyari"></span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="button" value="Gönder" onClick="kontrol()"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+	</form>
+</body>
+</html>

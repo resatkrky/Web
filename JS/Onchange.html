@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Onchange</title>
+	<script type="text/javascript">
+		function esit(){
+			document.getElementById("kutu2").value=document.getElementById("kutu1").value;
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		<input id="kutu1" type="text" onchange="esit()"><br/><br/>
+		<input id="kutu2" type="text"><br/><br/>
+	</form>
+</body>
+</html>
